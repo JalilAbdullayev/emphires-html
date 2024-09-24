@@ -1,18 +1,18 @@
 export const qualities: Array<{ image: string, order: number, title: string, description: string }> = [
     {
-        image: "/pubic/icon-01.png",
+        image: "/icon-01.png",
         order: 1,
         title: "Compensation Consulting",
         description: "Compensation Consulting are always help for a companies marketing, customer growths."
     },
     {
-        image: "/public/icon-02.png",
+        image: "/icon-02.png",
         order: 2,
         title: "Leadership Training",
         description: "The Leadership Training are always help for a companies marketing, customer growths."
     },
     {
-        image: "/public/icon-03.png",
+        image: "/icon-03.png",
         order: 3,
         title: "Talent Acquisition",
         description: "We provide broad menu employment service for a companies."
