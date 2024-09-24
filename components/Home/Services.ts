@@ -2,19 +2,19 @@ import {Service} from "../../models/Service.ts";
 
 const services: Array<Service> = [
     {
-        image: "/public/service-01.jpg",
+        image: "/service-01.jpg",
         category: 'MANAGEMENT',
         title: "HR Consulting",
         description: "HR consultants are provides broad menu Human Resource Services"
     },
     {
-        image: "/public/service-02.jpg",
+        image: "/service-02.jpg",
         category: 'PLANNING',
         title: "Improving Resource",
         description: "Improving Resources provides broad menu Human Resource Services"
     },
     {
-        image: "/public/service-03.jpg",
+        image: "/service-03.jpg",
         category: 'TRAINING',
         title: "Strategic Planning",
         description: "Strategic Planning provides broad menu Human Resource Services"
