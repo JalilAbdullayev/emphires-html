@@ -2,19 +2,19 @@ const testimonials: Array<{ name: string, position: string, image: string, comme
     {
         name: 'Jasica lenon',
         position: 'Manager',
-        image: '/public/testimonial-01.jpg',
+        image: '/testimonial-01.jpg',
         comment: 'HR Adviser responded quickly to questions and work with thanks for picking the most expert employee’s for our company. These guys are real best adviser helped so many times'
     },
     {
         name: 'Jason roy',
         position: 'CEO of HR',
-        image: '/public/testimonial-02.jpg',
+        image: '/testimonial-02.jpg',
         comment: 'HR Adviser responded quickly to questions and work with thanks for picking the most expert employee’s for our company. These guys are real best adviser helped so many times'
     },
     {
         name: 'Jennifer James',
         position: 'Adviser',
-        image: '/public/testimonial-03.jpg',
+        image: '/testimonial-03.jpg',
         comment: 'HR Adviser responded quickly to questions and work with thanks for picking the most expert employee’s for our company. These guys are real best adviser helped so many times'
     }
 ];

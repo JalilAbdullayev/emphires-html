@@ -1,11 +1,11 @@
 const hero: Array<{ image: string, title: string, subtitle: string }> = [
     {
-        image: '/public/n-slider-01.jpg',
+        image: '/n-slider-01.jpg',
         title: 'HR IS ALL ABOUT PEOPLE',
         subtitle: `Human <span class="text-[#0AADEB]">Resource</span><br/> Solution Partner`
     },
     {
-        image: '/public/n-slider-02.jpg',
+        image: '/n-slider-02.jpg',
         title: 'HR IS ALL ABOUT PEOPLE',
         subtitle: `Human <span class="text-[#0AADEB]">Resource</span><br/> Solution Partner`
     }
@@ -29,7 +29,7 @@ export const Hero = (): string => {
                     </a>
                     <div class="flex items-center my-auto">
                         <a href="">
-                            <img src="public/n-play-button.png" alt=""/>
+                            <img src="/n-play-button.png" alt=""/>
                         </a>
                         <span class="font-['Poppins'] tracking-wider font-semibold leading-6">
                         How We Work

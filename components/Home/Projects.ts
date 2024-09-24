@@ -1,46 +1,46 @@
 const projects: Array<{ image: string, title: string, subtitle: string }> = [
     {
-        image: '/public/project-01.jpg',
+        image: '/project-01.jpg',
         title: 'Packard Consulting',
         subtitle: 'INCREASE LEADS'
     },
     {
-        image: '/public/project-02.jpg',
+        image: '/project-02.jpg',
         title: 'Consulting Projects',
         subtitle: 'CHIEF EXECUTIVE'
     },
     {
-        image: '/public/project-03.jpg',
+        image: '/project-03.jpg',
         title: 'Lead Generations',
         subtitle: 'INCREASE LEADS'
     },
     {
-        image: '/public/project-04.jpg',
+        image: '/project-04.jpg',
         title: 'Marketing Strategy',
         subtitle: 'MARKETING EXPERT'
     },
     {
-        image: '/public/project-05.jpg',
+        image: '/project-05.jpg',
         title: 'Employee Insights',
         subtitle: 'BUILD EFFECTIVE'
     },
     {
-        image: '/public/project-06.jpg',
+        image: '/project-06.jpg',
         title: 'Employee Relations',
         subtitle: 'CHIEF EXECUTIVE'
     },
     {
-        image: '/public/project-07.jpg',
+        image: '/project-07.jpg',
         title: 'Social Marketing',
         subtitle: 'BUILD EFFECTIVE'
     },
     {
-        image: '/public/project-08.jpg',
+        image: '/project-08.jpg',
         title: 'Digital Strategy',
         subtitle: 'MARKETING EXPERT'
     },
     {
-        image: '/public/project-09.jpg',
+        image: '/project-09.jpg',
         title: 'Lead Campaign',
         subtitle: 'INCREASE LEADS'
     },

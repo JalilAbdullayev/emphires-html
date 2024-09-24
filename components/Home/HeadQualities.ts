@@ -1,6 +1,6 @@
 export const qualities: Array<{ image: string, order: number, title: string, description: string }> = [
     {
-        image: "/public/icon-01.png",
+        image: "/pubic/icon-01.png",
         order: 1,
         title: "Compensation Consulting",
         description: "Compensation Consulting are always help for a companies marketing, customer growths."
