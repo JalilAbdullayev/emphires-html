@@ -1,25 +1,25 @@
-const slider: Array<{ image: string, title: string, subtitle: string }> = [
+const hero: Array<{ image: string, title: string, subtitle: string }> = [
     {
         image: '/public/n-slider-01.jpg',
         title: 'HR IS ALL ABOUT PEOPLE',
-        subtitle: `Human <span>Resource</span><br/> Solution Partner`
+        subtitle: `Human <span class="text-[#0AADEB]">Resource</span><br/> Solution Partner`
     },
     {
         image: '/public/n-slider-02.jpg',
         title: 'HR IS ALL ABOUT PEOPLE',
-        subtitle: `Human <span class="text-primary">Resource</span><br/> Solution Partner`
+        subtitle: `Human <span class="text-[#0AADEB]">Resource</span><br/> Solution Partner`
     }
 ];
 
-export const Slide = (): string => {
-    return slider.map((slide) => {
+export const Hero = (): string => {
+    return hero.map(slide => {
         return `<div class="swiper-slide relative">
-            <img src="${slide.image}" alt=""/>
-            <div class="absolute top-96 left-48 right-0 text-white">
-                <h6 class="uppercase text-sm font-bold leading-6 mb-4">
+            <img src="${slide.image}" alt="" class="min-h-screen object-cover"/>
+            <div class="absolute top-96 left-48 right-0">
+                <h6 class="uppercase text-sm font-bold leading-6 mb-4 text-white">
                     ${slide.title}
                 </h6>
-                <h1 class="font-extrabold text-7xl font-['Nunito'] mb-8 mt-4">
+                <h1 class="text-7xl font-['Nunito'] mb-8 mt-4 text-white">
                     ${slide.subtitle}
                 </h1>
                 <div class="text-white mt-8 flex items-center gap-12">

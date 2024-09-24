@@ -3,11 +3,11 @@ export const Header = (): string => {
 <div class="flex">
     <div class="flex items-center border-x border-[#ffffff21] px-4">
         <a href="mailto:">
-            <i class="fa-solid fa-envelope-open-text text-primary me-3"></i> Email Address : info@emphires.com
+            <i class="fa-solid fa-envelope-open-text text-[#0AADEB] mr-3"></i> Email Address : info@emphires.com
         </a>
     </div>
 <div class="flex items-center border-e border-[#ffffff21] px-4">
-    <i class="fa-solid fa-map-location-dot me-3 text-primary"></i> Office Address : 12 Tottina, NY, USA
+    <i class="fa-solid fa-map-location-dot mr-3 text-[#0AADEB]"></i> Office Address : 12 Tottina, NY, USA
 </div>
 </div>
 <div class="flex">
@@ -32,7 +32,7 @@ export const Header = (): string => {
     </div>
 </div>
 </section>
-<section class="px-12 flex justify-between items-center border-b border-[#ffffff21] tracking-wider h-28">
+<section class="px-12 flex justify-between items-center border-b border-[#ffffff21] tracking-wider h-28 duration-500" id="navbar">
 <a href="/">
     <img src="/public/logo-white.svg" alt="" class="max-h-14"/>
 </a>
@@ -57,7 +57,7 @@ export const Header = (): string => {
     </a>
 </div>
 <div class="flex justify-between gap-3">
-    <i class="fa-regular fa-comments text-5xl text-primary"></i>
+    <i class="fa-regular fa-comments text-5xl text-[#0AADEB]"></i>
     <div>
         <div class="mb-1">
             Have any Questions?
@@ -69,3 +69,12 @@ export const Header = (): string => {
 </div>
 </section>`;
 }
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        document.querySelector<HTMLDivElement>('#navbar').classList.add('sticky-header');
+        document.querySelector<HTMLDivElement>('#navbar').querySelector('img').src = '/public/logo.svg';
+    } else {
+        document.querySelector<HTMLDivElement>('#navbar').classList.remove('sticky-header');
+        document.querySelector<HTMLDivElement>('#navbar').querySelector('img').src = '/public/logo-white.svg';
+    }
+})
