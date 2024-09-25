@@ -1,4 +1,6 @@
-const projects: Array<{ image: string, title: string, subtitle: string }> = [
+import {Project} from "../../models/Project.ts";
+
+const projects: Array<Project> = [
     {
         image: '/public/project-01.jpg',
         title: 'Packard Consulting',

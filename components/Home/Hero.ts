@@ -1,13 +1,15 @@
-const hero: Array<{ image: string, title: string, subtitle: string }> = [
+import {Slide} from "../../models/Slide.ts";
+
+const hero: Array<Slide> = [
     {
         image: '/public/n-slider-01.jpg',
         title: 'HR IS ALL ABOUT PEOPLE',
-        subtitle: `Human <span class="text-[#0AADEB]">Resource</span><br/> Solution Partner`
+        subtitle: `Human <span class="text-primary">Resource</span><br/> Solution Partner`
     },
     {
         image: '/public/n-slider-02.jpg',
         title: 'HR IS ALL ABOUT PEOPLE',
-        subtitle: `Human <span class="text-[#0AADEB]">Resource</span><br/> Solution Partner`
+        subtitle: `Human <span class="text-primary">Resource</span><br/> Solution Partner`
     }
 ];
 

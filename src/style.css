@@ -7,8 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply scroll-smooth;
+}
+
 body {
-    @apply font-['Muli'] text-[#6D7A8C] leading-7 max-w-full;
+    font-family: 'Muli', sans-serif;
+    @apply text-[#6D7A8C] leading-7 max-w-full;
 }
 
 header, blockquote, input[type="submit"] {
@@ -20,8 +25,16 @@ h1, h2, h3, h4, h5, h6 {
     @apply font-extrabold text-[#0C121D] text-3xl leading-10;
 }
 
+h5 {
+    @apply text-[20px] leading-[30px] tracking-normal;
+}
+
 p {
     @apply mb-5;
+}
+
+img {
+    @apply align-middle;
 }
 
 .sticky-header {
@@ -36,4 +49,68 @@ button, input, optgroup, select, textarea {
     font: inherit;
     line-height: inherit;
     @apply m-0;
+}
+
+.link {
+    @apply text-[#0C121D] underline underline-offset-4 duration-500;
+}
+
+.text-dark {
+    @apply text-[#0C121D];
+}
+
+.bg-dark {
+    @apply bg-[#0C121D];
+}
+
+.text-primary {
+    @apply text-[#0AADEB];
+}
+
+.bg-primary {
+    @apply bg-[#0AADEB];
+}
+
+.text-6xxl {
+    @apply text-[42px] leading-[48px] mb-4;
+}
+
+.leading-14 {
+    @apply leading-[56px];
+}
+
+.section {
+    @apply pt-24 pb-20;
+}
+
+.subtitle {
+    @apply uppercase text-sm font-bold tracking-[3px] text-[#B0B6BF] mb-2.5;
+}
+
+.selected-primary {
+    @apply text-[#0AADEB] not-italic;
+}
+
+.selected-dark {
+    @apply text-[#0C121D] not-italic;
+}
+
+.font-nunito-sans {
+    font-family: Nunito, sans-serif;
+}
+
+.footer-header {
+    @apply mb-9 text-lg border-b border-[#0000001a] pb-2.5 leading-7 uppercase font-extrabold tracking-wide text-dark relative;
+
+    &::after {
+        @apply content-[''] absolute w-12 h-0.5 -bottom-0.5 left-0 z-10 bg-[#0AADEB];
+    }
+}
+
+.footer-social {
+    @apply size-12 border-2 border-[#0C121D] leading-[48px] inline-block rounded-md text-center duration-500;
+
+    &:hover {
+        @apply text-white bg-[#0AADEB] border-[#0AADEB];
+    }
 }
