@@ -4,23 +4,23 @@ const news: Array<News> = [
     {
         title: 'Best Service provides for Small Businesses',
         date: 'July 4, 2020',
-        image: '/public/footer-01.jpg'
+        image: '/footer-01.jpg'
     },
     {
         title: 'Guide to HR adviser and Clients lessening',
         date: 'July 4, 2020',
-        image: '/public/footer-02.jpg'
+        image: '/footer-02.jpg'
     },
     {
         title: 'Our strength Proper Business in your Path',
         date: 'July 4, 2020',
-        image: '/public/footer-03.jpg'
+        image: '/footer-03.jpg'
     }
 ];
 export const Footer = (): string => {
     return `<section class="grid grid-cols-4 pb-10">
     <div class="mx-3.5">
-        <img src="/public/logo.svg" alt="" class="mb-5"/>
+        <img src="/logo.svg" alt="" class="mb-5"/>
         <p class="mt-2.5 mb-4">
         HR Advisers carry out your company hr service needs to provide training and managing the HR department company. Our consultants provides HR outsourcing and inclusive services.
         </p>

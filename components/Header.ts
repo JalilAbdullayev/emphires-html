@@ -34,7 +34,7 @@ export const Header = (): string => {
 </section>
 <section class="px-12 flex justify-between items-center border-b border-[#ffffff21] tracking-wider h-28 duration-500" id="navbar">
     <a href="/">
-        <img src="/public/logo-white.svg" alt="" class="max-h-14"/>
+        <img src="/logo-white.svg" alt="" class="max-h-14"/>
     </a>
     <div class="flex gap-8 font-extrabold [&>a:hover]:text-[#0AADEB] [&>a:hover]:duration-500">
         <a href="">
@@ -72,9 +72,9 @@ export const Header = (): string => {
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
         document.querySelector<HTMLDivElement>('#navbar').classList.add('sticky-header');
-        document.querySelector<HTMLDivElement>('#navbar').querySelector('img').src = '/public/logo.svg';
+        document.querySelector<HTMLDivElement>('#navbar').querySelector('img').src = '/logo.svg';
     } else {
         document.querySelector<HTMLDivElement>('#navbar').classList.remove('sticky-header');
-        document.querySelector<HTMLDivElement>('#navbar').querySelector('img').src = '/public/logo-white.svg';
+        document.querySelector<HTMLDivElement>('#navbar').querySelector('img').src = '/logo-white.svg';
     }
 })
