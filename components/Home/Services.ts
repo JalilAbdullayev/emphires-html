@@ -1,4 +1,6 @@
-const services: Array<{ image: string, category: string, title: string, description: string }> = [
+import {Service} from "../../models/Service.ts";
+
+const services: Array<Service> = [
     {
         image: "/service-01.jpg",
         category: 'MANAGEMENT',
@@ -39,7 +41,7 @@ export const Services = (): string => {
         ${service.description}
     </p>
 </div>
-<a href="" class="bg-[#0AADEB] rounded-full text-white text-lg size-14 inline-block hover:[&>i]:text-[#0AADEB] bottom-link duration-500 -mt-9 leading-[56px]">
+<a href="" class="bg-primary rounded-full text-white text-lg size-14 inline-block hover:[&>i]:text-[#0AADEB] bottom-link duration-500 -mt-9 leading-[56px]">
     <i class="fa-solid fa-arrow-right duration-500"></i>
 </a>
 </div>

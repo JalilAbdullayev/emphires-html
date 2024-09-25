@@ -1,4 +1,6 @@
-const testimonials: Array<{ name: string, position: string, image: string, comment: string }> = [
+import {Testimonial} from "../../models/Testimonial.ts";
+
+const testimonials: Array<Testimonial> = [
     {
         name: 'Jasica lenon',
         position: 'Manager',
@@ -25,7 +27,7 @@ export const Testimonials = (): string => {
         <img src="${testimonial.image}" alt="" class="absolute top-0 left-0 border-4 border-white rounded-md shadow-[0_0_30px_rgba(140,152,164,0.5)] h-24"/>
     <div class="bg-white pt-10 pr-7 pb-12 pl-20 rounded-md">
     <blockquote class="pb-1">
-        <p class="text-[22px] leading-7 mb-4 text-[#0C121D]">
+        <p class="text-[22px] leading-7 mb-4 text-dark">
 ${testimonial.comment}
 </p>
     </blockquote>
