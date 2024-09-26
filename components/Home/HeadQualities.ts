@@ -19,7 +19,7 @@ export const qualities: Array<Quality> = [
 ];
 export const HeadQualities = (): string => {
     return qualities.map((quality, index) => {
-        return `<div class="my-4 pt-7 pb-10 pr-14 pl-7 mb-7 rounded-md shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] bg-white relative overflow-hidden">
+        return `<div class="mt-4 pt-7 pb-10 pr-14 pl-7 lg:mb-7 rounded-md shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] bg-white relative overflow-hidden">
         <div class="flex justify-between">
         <img src="${quality.image}" alt=""/>
         <h3 class="text-7xl font-black text-[#E3E4E9]">

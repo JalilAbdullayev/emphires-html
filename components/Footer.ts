@@ -18,7 +18,7 @@ const news: Array<News> = [
     }
 ];
 export const Footer = (): string => {
-    return `<section class="grid grid-cols-4 pb-10">
+    return `<section class="grid lg:grid-cols-4 grid-cols-2 pb-10">
     <div class="mx-3.5">
         <img src="/public/logo.svg" alt="" class="mb-5"/>
         <p class="mt-2.5 mb-4">
@@ -114,7 +114,7 @@ export const Footer = (): string => {
     <h2 class="footer-header mt-6">
     FOLLOW US ON
     </h2>
-    <div class="[&>a]:mr-2 [&>a]:text-[#0C121D]">
+    <div class="grid grid-cols-4 [&>a]:mb-4 [&>a]:text-[#0C121D]">
         <a href="" target="_blank" class="footer-social">
             <i class="fa-brands fa-square-facebook"></i>
         </a>
@@ -130,7 +130,7 @@ export const Footer = (): string => {
     </div>
 </div>
 </section>
-<section class="bg-white flex justify-between py-7 pr-4 pl-6 rounded-lg shadow-[0_9px_30px_0_rgba(26,47,106,7%)] relative">
+<section class="bg-white flex justify-between items-center py-7 pr-4 pl-6 rounded-lg shadow-[0_9px_30px_0_rgba(26,47,106,7%)] relative">
     <p class="text-sm leading-relaxed text-dark">
         Copyright © 2022 <span class="text-primary">Emphires</span> All Rights Reserved.
     </p>
