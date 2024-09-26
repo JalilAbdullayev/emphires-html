@@ -2,17 +2,17 @@ import {Quality} from "../../models/Quality.ts";
 
 export const qualities: Array<Quality> = [
     {
-        image: "/public/icon-01.png",
+        image: "/icon-01.png",
         title: "Compensation Consulting",
         description: "Compensation Consulting are always help for a companies marketing, customer growths."
     },
     {
-        image: "/public/icon-02.png",
+        image: "/icon-02.png",
         title: "Leadership Training",
         description: "The Leadership Training are always help for a companies marketing, customer growths."
     },
     {
-        image: "/public/icon-03.png",
+        image: "/icon-03.png",
         title: "Talent Acquisition",
         description: "We provide broad menu employment service for a companies."
     },

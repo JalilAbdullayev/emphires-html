@@ -9,7 +9,7 @@ const courses: Array<Course> = [
         day: 4,
         month: 'JUL',
         description: 'There are full service engage company is to provide solution for employees needs…',
-        image: '/public/blog-01.jpg'
+        image: '/blog-01.jpg'
     },
     {
         title: 'Guide to HR adviser and Clients lessening',
@@ -19,7 +19,7 @@ const courses: Array<Course> = [
         day: 4,
         month: 'JUL',
         description: 'There are full service engage company is to provide solution for employees needs…',
-        image: '/public/blog-02.jpg'
+        image: '/blog-02.jpg'
     },
     {
         title: 'Our strength Proper Business in your Path',
@@ -29,7 +29,7 @@ const courses: Array<Course> = [
         day: 4,
         month: 'JUL',
         description: 'There are full service engage company is to provide solution for employees needs…',
-        image: '/public/blog-03.jpg'
+        image: '/blog-03.jpg'
     },
 ];
 
