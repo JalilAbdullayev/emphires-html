@@ -1,5 +1,5 @@
 export const Header = (): string => {
-    return `<section class="flex justify-between text-sm font-semibold leading-[50px] px-9 border-b border-[#ffffff21]">
+    return `<nav class="flex justify-between text-sm font-semibold leading-[50px] px-9 border-b border-[#ffffff21] max-xl:hidden">
     <div class="flex">
         <div class="flex items-center border-x border-[#ffffff21] px-4">
             <a href="mailto:">
@@ -31,13 +31,13 @@ export const Header = (): string => {
             </button>
         </div>
     </div>
-</section>
+</nav>
 <nav class="px-12 flex justify-between items-center border-b border-[#ffffff21] tracking-wider h-28 duration-500" id="navbar">
-    <a href="/">
-        <img src="/public/logo-white.svg" alt="" class="max-h-14"/>
+    <a href="/" class="shrink-0">
+        <img src="${window.location.pathname === '/' ? '/public/logo-white.svg' : '/public/logo.svg'}" alt="" class="max-h-14"/>
     </a>
-    <div class="flex gap-8 font-extrabold [&>a:hover]:text-[#0AADEB] [&>a:hover]:duration-500 max-xl:opacity-0">
-        <a href="">
+    <div class="flex gap-8 font-extrabold [&>a:hover]:text-[#0AADEB] [&>a:hover]:duration-500 max-xl:opacity-0 max-xl:hidden">
+        <a href="/" class="${window.location.pathname === '/' ? 'text-primary' : ''}">
             Home
         </a>
         <a href="">
@@ -52,11 +52,11 @@ export const Header = (): string => {
         <a href="">
             Blog
         </a>
-        <a href="">
+        <a href="/contact.html" class="${window.location.pathname === '/contact.html' ? 'text-primary' : ''}">
             Contact Us
         </a>
     </div>
-    <div class="flex justify-between gap-3 max-xl:opacity-0">
+    <div class="flex justify-between gap-3 max-xl:hidden">
         <i class="fa-regular fa-comments text-5xl text-[#0AADEB]"></i>
         <div>
             <div class="mb-1">
@@ -69,40 +69,42 @@ export const Header = (): string => {
     </div>
 <i class="fa-solid fa-bars xl:hidden text-4xl cursor-pointer" id="mobile-button"></i>
 </nav>
-<nav class="bg-white border-t-4 border-[#0AADEB] opacity-0 pointer-events-none transform -translate-y-full transition-all ease-in-out" id="mobile-nav">
-<ul class="[&>li]:text-[#0C121D] [&>li]:py-2.5 [&>li]:px-4 [&>li]:border-b border-[#09162a26] [&>li]:font-extrabold duration-500">
-    <li>
-        <a href="" class="text-primary">
-            Home
-        </a>
-    </li>
-    <li>
-        <a href="">
-            Pages
-        </a>
-    </li>
-    <li>
-        <a href="">
-            Services
-        </a>
-    </li>
-    <li>
-        <a href="">
-            Projects
-        </a>
-    </li>
-    <li>
-        <a href="">
-            Blog
-        </a>
-    </li>
-    <li>
-        <a href="">
-            Contact Us
-        </a>
-    </li>
-</ul>
-</nav>`;
+<div class="relative">
+    <nav class="bg-white border-t-4 border-[#0AADEB] opacity-0 pointer-events-none transform -translate-y-full transition-all ease-in-out fixed top-[16.5%] z-50 w-full" id="mobile-nav">
+        <ul class="[&>li]:text-[#0C121D] [&>li]:py-2.5 [&>li]:px-4 [&>li]:border-b border-[#09162a26] [&>li]:font-extrabold duration-500">
+            <li>
+                <a href="/" class="${window.location.pathname === '/' ? 'text-primary' : ''}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Pages
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="/contact.html" class="${window.location.pathname === '/contact.html' ? 'text-primary' : ''}">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>`;
 }
 document.addEventListener('DOMContentLoaded', () => {
     const mobile = document.querySelector<HTMLSpanElement>('#mobile-button');
@@ -116,7 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navbarImg.src = '/public/logo.svg';
         } else {
             navbar.classList.remove('sticky-header');
+            if (window.location.pathname === '/') {
             navbarImg.src = '/public/logo-white.svg';
+            }
         }
     });
     mobile.addEventListener('click', () => {

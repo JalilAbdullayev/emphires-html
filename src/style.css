@@ -114,3 +114,62 @@ button, input, optgroup, select, textarea {
         @apply text-white bg-[#0AADEB] border-[#0AADEB];
     }
 }
+
+.contact-cards > div {
+    @apply mb-5 border border-[#DCE5E7] rounded-md lg:px-[15px] px-[25px] lg:pt-[70px] lg:pb-[60px] py-[30px] shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] flex gap-6;
+
+    h2 {
+        @apply text-lg leading-5 mb-[5px];
+    }
+
+    .contact-card-icon {
+        @apply bg-[#0AADEB] rounded-full size-16 text-center;
+
+        i {
+            @apply text-3xl leading-[65px] text-white
+        }
+    }
+}
+
+.contact-social li {
+    @apply mr-2 mb-2 text-white bg-[#0AADEB] text-center text-[22px] rounded-[5px] leading-[60px] size-[60px] duration-500;
+
+    a {
+        @apply inline-block size-full;
+    }
+
+    &:hover {
+        @apply bg-[#0C121D];
+    }
+}
+
+.contact-form {
+    div {
+        @apply grid grid-cols-2 gap-7 mb-4;
+
+        input {
+            @apply px-[15px] h-[55px];
+        }
+    }
+
+    input, textarea {
+        @apply border border-[#DCE5E7] text-sm bg-white text-[#888888] rounded-[5px] shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] outline-none duration-500;
+
+        &:focus {
+            @apply shadow-none;
+        }
+    }
+
+    textarea {
+        @apply h-[100px] p-[15px] w-full mb-4;
+    }
+
+    button {
+        font-family: Nunito, sans-serif;
+        @apply pt-5 px-[30px] pb-[18px] bg-[#0C121D] text-white border-none outline-none text-[13px] font-extrabold leading-none tracking-[1px] rounded-[5px] duration-300 uppercase;
+
+        &:hover {
+            @apply bg-[#0AADEB];
+        }
+    }
+}
