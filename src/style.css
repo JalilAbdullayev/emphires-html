@@ -159,31 +159,39 @@ button, input, optgroup, select, textarea {
     }
 }
 
-.contact-cards > div {
-    @apply mb-5 border border-[#DCE5E7] rounded-md lg:px-[15px] px-[25px] lg:pt-[70px] lg:pb-[60px] py-[30px] shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] flex gap-6;
+.contact-cards {
+    @apply pt-24 pb-12 container col-lg-3 lg:gap-7 gap-1;
 
-    h2 {
-        @apply text-lg leading-5 mb-[5px];
-    }
+    & > div {
+        @apply mb-5 border border-[#DCE5E7] rounded-md lg:px-[15px] px-[25px] lg:pt-[70px] lg:pb-[60px] py-[30px] shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] flex gap-6;
 
-    .contact-card-icon {
-        @apply bg-[#0AADEB] rounded-full size-16 text-center;
+        h2 {
+            @apply text-lg leading-5 mb-[5px];
+        }
 
-        i {
-            @apply text-3xl leading-[65px] text-white
+        .contact-card-icon {
+            @apply bg-[#0AADEB] rounded-full size-16 text-center;
+
+            i {
+                @apply text-3xl leading-[65px] text-white
+            }
         }
     }
 }
 
-.contact-social li {
-    @apply mr-2 mb-2 text-white bg-[#0AADEB] text-center text-[22px] rounded-[5px] leading-[60px] size-[60px] duration-500;
+.contact-social {
+    @apply pt-4 flex;
 
-    a {
-        @apply inline-block size-full;
-    }
+    li {
+        @apply mr-2 mb-2 text-white bg-[#0AADEB] text-center text-[22px] rounded-[5px] leading-[60px] size-[60px] duration-500;
 
-    &:hover {
-        @apply bg-[#0C121D];
+        a {
+            @apply inline-block size-full;
+        }
+
+        &:hover {
+            @apply bg-[#0C121D];
+        }
     }
 }
 
@@ -218,7 +226,9 @@ button, input, optgroup, select, textarea {
     }
 }
 
-#specialties {
+.specialties {
+    @apply grid md:grid-cols-2 gap-7;
+
     div {
         @apply text-center my-5;
 
@@ -261,5 +271,124 @@ button, input, optgroup, select, textarea {
 
     &:after {
         @apply content-[''] size-[110px] absolute -right-[35px] -bottom-[35px] bg-[#0C121D] rounded-full -z-[1];
+    }
+}
+
+.article-posts {
+    @apply mb-[30px] rounded-[5px] bg-white;
+
+    ul li {
+        @apply mb-2.5 flex items-center w-full pb-[15px];
+
+        img {
+            @apply max-w-full h-auto;
+        }
+
+        a {
+            font-family: Nunito, sans-serif;
+            @apply text-base font-semibold;
+        }
+
+        span {
+            @apply block text-sm font-bold text-primary leading-[17px] mt-[5px];
+        }
+    }
+}
+
+.aside-title {
+    @apply text-[22px] leading-[26px] font-extrabold text-[#101010] py-[15px] mb-[30px] border-b border-[#EEEEEE] relative;
+
+    &:after {
+        @apply content-[''] absolute w-[50px] h-[3px] left-0 -bottom-0.5 bg-[#0AADEB];
+    }
+}
+
+.article-meta {
+    @apply text-sm mt-2.5 mb-5 pb-5 border-b border-dashed border-[#D4D2D2];
+
+    span {
+        @apply mr-5 capitalize;
+
+        i {
+            @apply text-[#0AADEB] mr-0.5;
+        }
+
+        a {
+            @apply text-[#0C121D] duration-500;
+
+            &:hover {
+                @apply text-[#0AADEB];
+            }
+        }
+    }
+}
+
+.article-socials {
+    @apply self-end;
+
+    li {
+        @apply inline-block mr-2;
+
+        a {
+            @apply inline-block size-[45px] leading-[45px] text-white text-center text-base rounded-full;
+        }
+    }
+}
+
+.article-categories {
+    @apply mb-[30px] rounded-[5px] bg-white;
+
+    a {
+        font-family: Nunito, sans-serif;
+        @apply bg-white pt-2.5 pb-2 pl-5 block font-bold text-base -tracking-[0.5px] text-dark duration-500;
+
+        &:hover {
+            @apply text-[#0AADEB];
+        }
+    }
+
+    span {
+        @apply absolute right-0 bg-dark text-white text-center font-bold rounded-full size-[25px] leading-[25px] text-[13px] top-[9px];
+    }
+}
+
+.article-tags a {
+    font-family: Nunito, sans-serif;
+    @apply inline-block text-sm mb-2 mx-0.5 font-bold bg-white border rounded px-[18px] h-[42px] leading-[42px] border-[#EEEEEE] shadow-[0_9px_10px_0_rgba(26,47,106,0.07)] text-[#0C121D] -tracking-[0.5px] duration-500;
+
+    &:hover {
+        @apply bg-[#0AADEB] border-[#0AADEB] text-white;
+    }
+}
+
+.comment-form {
+    .input, textarea {
+        @apply text-[#848484] px-[15px] bg-[#EFF2F7] shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] duration-150;
+
+        &:hover, &:focus, &:active {
+            @apply shadow-none;
+        }
+
+        &::placeholder {
+            @apply text-[#6C757D];
+        }
+    }
+
+    .input {
+        @apply col-span-4 mx-3.5 mb-[15px] px-3.5 h-[50px] text-sm border border-[#EEEEEE] rounded-md;
+    }
+
+    textarea {
+        min-height: calc(1.5em + .75rem + 2px);
+        @apply col-span-12 h-[150px] text-base py-3 border-0 rounded-[5px] mb-[25px] outline-0;
+    }
+
+    button {
+        font-family: Nunito, sans-serif;
+        @apply py-[18px] pr-[45px] pl-10 text-[13px] font-extrabold tracking-[1px] rounded-[5px] bg-[#0C121D] text-white border-0 duration-300 outline-0 text-center;
+
+        &:hover {
+            @apply bg-[#0AADEB];
+        }
     }
 }

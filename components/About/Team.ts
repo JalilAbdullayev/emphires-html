@@ -56,7 +56,7 @@ export const Team = (): string => {
     </div>
     <div class="py-5 pr-[30px] pl-[25px] text-center">
         <div>
-            <h3 class="text-dark hover:text-[#0AADEB] text-[22px] leading-6 mt-[5px] duration-500">
+            <h3 class="hover:text-[#0AADEB] text-[22px] leading-6 mt-[5px] duration-500">
                 <a href="">
                     ${member.name}
                 </a>

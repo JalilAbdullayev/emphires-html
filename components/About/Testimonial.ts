@@ -22,7 +22,7 @@ export const Testimonial = (): string => {
             <img src="${testimonial.image}" alt="" class="rounded-md h-[75px] border-[5px] border-white shadow-[0_0_40px_0_rgba(26,47,106,0.08)] w-full max-w-full align-middle"/>
         </div>
         <div>
-            <h3 class="text-lg leading-6 font-extrabold mt-[15px] text-primary">
+            <h3 class="text-lg leading-6 mt-[15px] text-primary">
                 ${testimonial.name}
             </h3>
             <div>

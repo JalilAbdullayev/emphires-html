@@ -25,7 +25,7 @@ export const Footer = (): string => {
         HR Advisers carry out your company hr service needs to provide training and managing the HR department company. Our consultants provides HR outsourcing and inclusive services.
         </p>
         <div class="flex justify-between items-center bg-white rounded-lg py-5 px-7">
-            <h5 class="font-black text-dark text-base">
+            <h5 class="font-black text-base">
                 <div class="font-bold">
                     Talk To Our Support
                 </div>

@@ -88,3 +88,8 @@ if (window.location.pathname === '/about.html') {
         gap: 30
     }).mount();
 }
+
+if (window.location.pathname === '/blog.html') {
+    const main: HTMLDivElement = document.querySelector<HTMLDivElement>('main');
+    main.innerHTML = Courses();
+}

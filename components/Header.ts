@@ -49,7 +49,7 @@ export const Header = (): string => {
         <a href="">
             Projects
         </a>
-        <a href="">
+        <a href="/blog.html">
             Blog
         </a>
         <a href="/contact.html" class="${window.location.pathname === '/contact.html' ? 'text-primary' : ''}">
@@ -93,7 +93,7 @@ export const Header = (): string => {
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/blog.html">
                     Blog
                 </a>
             </li>
