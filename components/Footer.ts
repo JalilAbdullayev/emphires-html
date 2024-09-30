@@ -18,7 +18,7 @@ const news: Array<News> = [
     }
 ];
 export const Footer = (): string => {
-    return `<section class="grid lg:grid-cols-4 grid-cols-2 pb-10">
+    return `<section class="col-lg-4 grid-cols-2 pb-10">
     <div class="mx-3.5">
         <img src="/logo.svg" alt="" class="mb-5"/>
         <p class="mt-2.5 mb-4">
@@ -84,7 +84,7 @@ export const Footer = (): string => {
         </h2>
         <ul>
             ${news.map(news => {
-        return `<li class="grid grid-cols-3 mb-4 gap-4">
+        return `<li class="col-3 mb-4 gap-4">
                     <img src="${news.image}" alt="" class="w-full"/>
                     <div class="col-span-2">
                         <a href="" class="font-bold text-dark hover:text-[#0AADEB] duration-500">
@@ -114,7 +114,7 @@ export const Footer = (): string => {
     <h2 class="footer-header mt-6">
     FOLLOW US ON
     </h2>
-    <div class="grid grid-cols-4 [&>a]:mb-4 [&>a]:text-[#0C121D]">
+    <div class="grid col-4 [&>a]:mb-4 [&>a]:text-[#0C121D]">
         <a href="" target="_blank" class="footer-social">
             <i class="fa-brands fa-square-facebook"></i>
         </a>

@@ -12,6 +12,8 @@ import {Clients} from "../components/Home/Clients.ts";
 import {Courses} from "../components/Home/Courses.ts";
 import {Footer} from "../components/Footer.ts";
 import Glide from "@glidejs/glide";
+import {Team} from "../components/About/Team.ts";
+import {Testimonial} from "../components/About/Testimonial.ts";
 
 const header: HTMLDivElement = document.querySelector<HTMLDivElement>('header');
 const footer: HTMLDivElement = document.querySelector<HTMLDivElement>('footer .container');
@@ -69,6 +71,20 @@ if (window.location.pathname === '/') {
     });
 
     new Glide('.testimonial-glide', {
+        gap: 30
+    }).mount();
+}
+
+if (window.location.pathname === '/about.html') {
+    const approachQualities: HTMLDivElement = document.querySelector<HTMLDivElement>('#approach-qualities');
+    const team: HTMLDivElement = document.querySelector<HTMLDivElement>('#team');
+    const testimonial: HTMLDivElement = document.querySelector<HTMLDivElement>('.about-testimonial .glide__slides');
+
+    approachQualities.innerHTML = ApproachQualities();
+    team.innerHTML = Team();
+    testimonial.innerHTML = Testimonial();
+
+    new Glide('.about-testimonial', {
         gap: 30
     }).mount();
 }

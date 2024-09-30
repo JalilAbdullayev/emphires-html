@@ -22,7 +22,7 @@ header, blockquote, input[type="submit"] {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito', sans-serif;
-    @apply font-extrabold text-[#0C121D] text-3xl leading-10;
+    @apply font-extrabold text-[#0C121D] text-3xl leading-10 mb-2;
 }
 
 h5 {
@@ -72,7 +72,7 @@ button, input, optgroup, select, textarea {
 }
 
 .text-6xxl {
-    @apply text-[42px] leading-[48px] mb-4;
+    @apply text-[42px] leading-[48px] mb-[15px];
 }
 
 .leading-14 {
@@ -80,11 +80,11 @@ button, input, optgroup, select, textarea {
 }
 
 .section {
-    @apply pt-24 pb-20;
+    @apply pt-[100px] pb-20;
 }
 
 .subtitle {
-    @apply uppercase text-sm font-bold tracking-[3px] text-[#B0B6BF] mb-2.5;
+    @apply uppercase text-sm font-bold tracking-[3px] text-[#B0B6BF] mb-2.5 leading-5;
 }
 
 .selected-primary {
@@ -97,6 +97,50 @@ button, input, optgroup, select, textarea {
 
 .font-nunito-sans {
     font-family: Nunito, sans-serif;
+}
+
+.col-2 {
+    @apply grid grid-cols-2;
+}
+
+.col-lg-2 {
+    @apply grid lg:grid-cols-2;
+}
+
+.col-md-2 {
+    @apply grid md:grid-cols-2;
+}
+
+.col-xl-2 {
+    @apply grid xl:grid-cols-2;
+}
+
+.col-3 {
+    @apply grid grid-cols-3;
+}
+
+.col-md-3 {
+    @apply grid md:grid-cols-3;
+}
+
+.col-lg-3 {
+    @apply grid lg:grid-cols-3;
+}
+
+.col-xl-3 {
+    @apply grid xl:grid-cols-3;
+}
+
+.col-4 {
+    @apply grid grid-cols-4;
+}
+
+.col-lg-4 {
+    @apply grid lg:grid-cols-4;
+}
+
+.col-xl-5 {
+    @apply grid xl:grid-cols-5;
 }
 
 .footer-header {
@@ -171,5 +215,51 @@ button, input, optgroup, select, textarea {
         &:hover {
             @apply bg-[#0AADEB];
         }
+    }
+}
+
+#specialties {
+    div {
+        @apply text-center my-5;
+
+        h4 {
+            @apply leading-[58px] text-5xl text-white;
+        }
+
+        h3 {
+            @apply text-sm leading-6 tracking-[1.5px] font-medium text-white;
+        }
+    }
+}
+
+.about-social li {
+    @apply pb-[5px];
+
+    a {
+        @apply size-10 text-center bg-white leading-10 text-[#1C325B] rounded-full text-[15px] duration-500 inline-block;
+
+        &:hover {
+            @apply bg-[#0AADEB] text-white;
+        }
+    }
+}
+
+.plus-icon:hover .social-icons {
+    @apply visible opacity-100 left-0;
+}
+
+.about-img {
+    @apply w-[92%] h-auto relative inline-block rounded-lg;
+
+    img {
+        @apply rounded-lg shadow-[0_9px_24px_0_rgba(26,47,106,0.05%)] w-full max-w-full h-auto align-middle;
+    }
+
+    &:before {
+        @apply content-[''] size-[290px] absolute -top-[45px] -left-[45px] rounded-[10px] bg-[url('/public/bg-17.png')] bg-repeat bg-[0_0] -z-[1];
+    }
+
+    &:after {
+        @apply content-[''] size-[110px] absolute -right-[35px] -bottom-[35px] bg-[#0C121D] rounded-full -z-[1];
     }
 }

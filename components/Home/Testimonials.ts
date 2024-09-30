@@ -1,6 +1,6 @@
 import {Testimonial} from "../../models/Testimonial.ts";
 
-const testimonials: Array<Testimonial> = [
+export const testimonials: Array<Testimonial> = [
     {
         name: 'Jasica lenon',
         position: 'Manager',

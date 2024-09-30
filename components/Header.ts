@@ -40,8 +40,8 @@ export const Header = (): string => {
         <a href="/" class="${window.location.pathname === '/' ? 'text-primary' : ''}">
             Home
         </a>
-        <a href="">
-            Pages
+        <a href="/about.html" class="${window.location.pathname === '/about.html' ? 'text-primary' : ''}">
+            About Us
         </a>
         <a href="">
             Services
@@ -78,8 +78,8 @@ export const Header = (): string => {
                 </a>
             </li>
             <li>
-                <a href="">
-                    Pages
+                <a href="/about.html" class="${window.location.pathname === '/about.html' ? 'text-primary' : ''}">
+                    About Us
                 </a>
             </li>
             <li>
