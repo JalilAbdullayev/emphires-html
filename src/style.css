@@ -151,6 +151,10 @@ a {
     @apply grid xl:grid-cols-5;
 }
 
+.img-fluid {
+    @apply max-w-full h-auto;
+}
+
 .footer-header {
     @apply mb-9 text-lg border-b border-[#0000001a] pb-2.5 leading-7 uppercase font-extrabold tracking-wide text-dark relative;
 

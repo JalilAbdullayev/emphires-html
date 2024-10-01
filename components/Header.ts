@@ -46,7 +46,7 @@ export const Header = (): string => {
         <a href="" class="${window.location.pathname === '/service.html' ? 'text-primary' : 'text-white'}">
             Services
         </a>
-        <a href="" class="${window.location.pathname === '/projects.html' ? 'text-primary' : 'text-white'}">
+        <a href="/projects.html" class="${window.location.pathname === '/projects.html' ? 'text-primary' : 'text-white'}">
             Projects
         </a>
         <a href="/blog.html" class="${window.location.pathname === '/blog.html' ? 'text-primary' : 'text-white'}">
@@ -88,7 +88,7 @@ export const Header = (): string => {
                 </a>
             </li>
             <li>
-                <a href="" class="${window.location.pathname === '/projects.html' ? 'text-primary' : ''}">
+                <a href="/projects.html" class="${window.location.pathname === '/projects.html' ? 'text-primary' : ''}">
                     Projects
                 </a>
             </li>

@@ -1,6 +1,6 @@
 import {Project} from "../../models/Project.ts";
 
-const projects: Array<Project> = [
+export const projects: Array<Project> = [
     {
         image: '/project-01.jpg',
         title: 'Packard Consulting',
