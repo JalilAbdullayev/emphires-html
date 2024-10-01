@@ -42,37 +42,37 @@ export const Footer = (): string => {
     </h2>
     <ul class="[&>li]:mb-4 [&>li]:font-bold [&>li]:text-[#0C121D]">
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">Adviser-Client Relations</span>
             </a>
         </li>
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">Departments</span>
             </a>
         </li>
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">Adviser Work</span>
             </a>
         </li>
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">Our Employees</span>
             </a>
         </li>
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">Meet Our Experts</span>
             </a>
         </li>
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">Department Services</span>
             </a>
         </li>
         <li>
-            <a href="" class="hover:text-[#0AADEB] duration-500">
+            <a href="" class="hover:text-[#0AADEB]">
                 <i class="fa-solid fa-chevron-right"></i> <span class="pl-2.5">About Company</span>
             </a>
         </li>
@@ -87,7 +87,7 @@ export const Footer = (): string => {
         return `<li class="col-3 mb-4 gap-4">
                     <img src="${news.image}" alt="" class="w-full"/>
                     <div class="col-span-2">
-                        <a href="" class="font-bold text-dark hover:text-[#0AADEB] duration-500">
+                        <a href="" class="font-bold hover:text-[#0AADEB]">
                             ${news.title}
                         </a>
                         <div class="text-primary">
@@ -114,7 +114,7 @@ export const Footer = (): string => {
     <h2 class="footer-header mt-6">
     FOLLOW US ON
     </h2>
-    <div class="grid col-4 [&>a]:mb-4 [&>a]:text-[#0C121D]">
+    <div class="grid col-4 [&>a]:mb-4">
         <a href="" target="_blank" class="footer-social">
             <i class="fa-brands fa-square-facebook"></i>
         </a>
@@ -130,27 +130,27 @@ export const Footer = (): string => {
     </div>
 </div>
 </section>
-<section class="bg-white flex justify-between items-center py-7 pr-4 pl-6 rounded-lg shadow-[0_9px_30px_0_rgba(26,47,106,7%)] relative">
+<section class="bg-white flex justify-between items-center py-7 pr-4 pl-6 rounded-lg shadow-[0_9px_30px_0_rgba(26,47,106,0.07)] relative">
     <p class="text-sm leading-relaxed text-dark">
-        Copyright © 2022 <span class="text-primary">Emphires</span> All Rights Reserved.
+        Copyright © 2022 <a href="/" class="text-primary">Emphires</a> All Rights Reserved.
     </p>
-    <a href="#" class="absolute left-1/2 -translate-x-1/2 -top-5 right-5 size-16 leading-[64px] text-[22px] text-center bg-dark text-white rounded-lg duration-500 hover:bg-[#0AADEB] z-10">
+    <a href="#" class="absolute left-1/2 -translate-x-1/2 -top-5 right-5 size-16 leading-[64px] text-[22px] text-center bg-dark text-white rounded-lg hover:bg-[#0AADEB] z-10">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     <ul class="flex justify-between [&>li]:mx-2.5 [&>li]:text-sm">
         <li class="duration-500 hover:text-[#0AADEB]">
             <a href="">
-            Privacy & Policy
+                Privacy & Policy
             </a>
         </li>
         <li class="duration-500 hover:text-[#0AADEB]">
             <a href="">
-            Conditions
+                Conditions
             </a>
         </li>
         <li class="duration-500 hover:text-[#0AADEB]">
             <a href="">
-            Refund Policy
+                Refund Policy
             </a>
         </li>
     </ul>

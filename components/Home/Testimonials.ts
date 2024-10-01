@@ -24,25 +24,25 @@ export const testimonials: Array<Testimonial> = [
 export const Testimonials = (): string => {
     return testimonials.map(testimonial => {
         return `<div class="glide__slide relative pt-10 pl-14 mr-7">
-        <img src="${testimonial.image}" alt="" class="absolute top-0 left-0 border-4 border-white rounded-md shadow-[0_0_30px_rgba(140,152,164,0.5)] h-24"/>
+    <img src="${testimonial.image}" alt="" class="absolute top-0 left-0 border-4 border-white rounded-md shadow-[0_0_30px_rgba(140,152,164,0.5)] h-24"/>
     <div class="bg-white pt-10 pr-7 pb-12 pl-20 rounded-md">
-    <blockquote class="pb-1">
-        <p class="text-[22px] leading-7 mb-4 text-dark">
-${testimonial.comment}
-</p>
-    </blockquote>
-    <div>
-    <div class="flex justify-between">
+        <blockquote class="pb-1">
+            <p class="text-[22px] leading-7 mb-4 text-dark">
+                ${testimonial.comment}
+            </p>
+        </blockquote>
         <div>
-            <h3 class="text-[#0AADEB] text-lg font-bold inline">
-                ${testimonial.name}
-            </h3> - <span>
-                ${testimonial.position}
-            </span>
+            <div class="flex justify-between">
+                <div>
+                    <h3 class="text-[#0AADEB] text-lg font-bold inline">
+                        ${testimonial.name}
+                    </h3> - <span>
+                        ${testimonial.position}
+                    </span>
+                </div>
+                <i class="fa-solid fa-quote-right text-6xl text-[#0AADEB]"></i>
+            </div>
         </div>
-        <i class="fa-solid fa-quote-right text-6xl text-[#0AADEB]"></i>
-    </div>
-    </div>
     </div>
 </div>`;
     }).join('')

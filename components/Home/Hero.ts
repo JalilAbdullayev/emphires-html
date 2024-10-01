@@ -16,7 +16,7 @@ const hero: Array<Slide> = [
 export const Hero = (): string => {
     return hero.map(slide => {
         return `<div class="swiper-slide relative">
-            <img src="${slide.image}" alt="" class="min-h-screen object-cover"/>
+            <img src="${slide.image}" alt="" class="min-h-screen object-cover object-[70%]"/>
             <div class="absolute top-96 left-10 xl:left-48 right-0">
                 <h6 class="uppercase text-sm font-bold leading-6 mb-4 text-white">
                     ${slide.title}
@@ -26,7 +26,7 @@ export const Hero = (): string => {
                 </h1>
                 <div class="text-white mt-8 flex items-center gap-12">
                     <a href=""
-                       class="font-['Nunito'] leading-6 font-extrabold border-2 border-white py-4 px-12 rounded-md uppercase text-sm hover:bg-[#0AADEB] duration-500 hover:border-[#00ADEB">
+                       class="font-['Nunito'] leading-6 font-extrabold border-2 border-white py-4 px-12 rounded-md uppercase text-sm hover:bg-[#0AADEB] duration-500 hover:border-[#00ADEB] text-white">
                         CONTACT US
                     </a>
                     <div class="flex items-center my-auto">

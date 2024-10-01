@@ -14,6 +14,7 @@ import {Footer} from "../components/Footer.ts";
 import Glide from "@glidejs/glide";
 import {Team} from "../components/About/Team.ts";
 import {Testimonial} from "../components/About/Testimonial.ts";
+import {Members} from "../components/Services/Members.ts";
 
 const header: HTMLDivElement = document.querySelector<HTMLDivElement>('header');
 const footer: HTMLDivElement = document.querySelector<HTMLDivElement>('footer .container');
@@ -92,4 +93,10 @@ if (window.location.pathname === '/about.html') {
 if (window.location.pathname === '/blog.html') {
     const main: HTMLDivElement = document.querySelector<HTMLDivElement>('main');
     main.innerHTML = Courses();
+}
+
+
+if (window.location.pathname === '/service.html') {
+    const team: HTMLDivElement = document.querySelector<HTMLDivElement>('#team');
+    team.innerHTML = Members();
 }

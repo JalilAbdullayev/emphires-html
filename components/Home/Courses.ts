@@ -34,10 +34,10 @@ export const Courses = (): string => {
     </div>
     <div class="p-8">
         <div class="mb-4 text-sm tracking-[0.5px] font-semibold">
-            <a href="" title="Posted by admin" class="duration-500 hover:text-[#0AADEB]">
+            <a href="" title="Posted by admin" class="hover:text-[#0AADEB]">
                 <i class="fa-regular fa-user text-primary"></i> by admin
             </a>
-            <a href="" class="duration-500 hover:text-[#0AADEB] ml-2.5">
+            <a href="" class="hover:text-[#0AADEB] ml-2.5">
                 <i class="fa-regular fa-folder-open text-primary"></i> ${course.category}
             </a>
             <span class="ml-2.5">
@@ -52,7 +52,7 @@ export const Courses = (): string => {
         <p class="mb-4">
             ${course.description}
         </p>
-        <a href="/article.html" class="uppercase font-extrabold duration-500 hover:text-[#0AADEB]">
+        <a href="/article.html" class="uppercase font-extrabold hover:text-[#0AADEB]">
             <span class="link pr-5 text-xs tracking-wider duration-500 hover:text-[#0AADEB]">READ MORE</span> <i class="fa-solid fa-arrow-right text-sm"></i>
         </a>
     </div>

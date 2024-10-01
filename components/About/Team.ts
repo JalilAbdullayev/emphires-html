@@ -1,25 +1,25 @@
 import {Member} from "../../models/Member.ts";
 
-const team: Array<Member> = [
+export const team: Array<Member> = [
     {
         name: 'Thomas Novak',
         position: 'CEO/FOUNDER',
-        image: '/public/team-01.jpg'
+        image: '/team-01.jpg'
     },
     {
         name: 'Amanda Berry',
         position: 'MANAGING DIRECTOR',
-        image: '/public/team-02.jpg'
+        image: '/team-02.jpg'
     },
     {
         name: ' Edward Willey',
         position: 'INVESTMENT EXPERT',
-        image: '/public/team-03.jpg'
+        image: '/team-03.jpg'
     },
     {
         name: 'Berry Castle',
         position: 'STOCK EXPERT',
-        image: '/public/team-04.jpg'
+        image: '/team-04.jpg'
     }
 ];
 export const Team = (): string => {
@@ -62,7 +62,7 @@ export const Team = (): string => {
                 </a>
             </h3>
             <div class="uppercase px-2.5">
-                <h4 class="text-xs font-semibold tracking-[1px] px-2.5 text-[#6D7A8C]">
+                <h4 class="text-xs font-semibold tracking-[1px] px-2.5 text-secondary">
                     ${member.position}
                 </h4>
             </div>
