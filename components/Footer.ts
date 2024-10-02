@@ -154,5 +154,18 @@ export const Footer = (): string => {
             </a>
         </li>
     </ul>
-</section>`;
+</section>
+<div class="opacity-0 invisible fixed top-0 left-0 size-full bg-[#0C121DE6] duration-300 -translate-y-[30%] z-50" id="search-modal">
+    <div class="absolute text-white top-[25px] right-[25px] cursor-pointer" id="close-modal">
+        <i class="fa-solid fa-xmark text-3xl block"></i>
+    </div>
+    <div class="max-w-[970px] mx-auto relative top-1/2 left-0 -translate-y-1/2">
+        <form action="" class="relative">
+            <input type="search" name="" class="border-0 text-base text-[#09162A] pl-4 text-left h-[70px] leading-[70px] bg-white shadow-[0_9px_24px_0_rgba(26,47,106,0.05)] w-full rounded-md duration-150 -outline-offset-2 max-w-full" placeholder="Type Word Then Press Enter"/>
+            <button type="submit" class="absolute top-[5px] right-[5px] text-xl size-[60px] leading-[60px] rounded text-white bg-primary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+</div>`;
 }

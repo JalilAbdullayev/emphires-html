@@ -20,6 +20,32 @@ import {Project} from "../components/Projects/Project.ts";
 const header: HTMLDivElement = document.querySelector<HTMLDivElement>('header');
 const footer: HTMLDivElement = document.querySelector<HTMLDivElement>('footer .container');
 
+document.addEventListener('DOMContentLoaded', () => {
+    const searchBtn: HTMLButtonElement = document.querySelector<HTMLButtonElement>('#search-button');
+    const searchMdl: HTMLDivElement = document.querySelector<HTMLDivElement>('#search-modal');
+    const clsMdl: HTMLDivElement = document.querySelector<HTMLDivElement>('#close-modal');
+
+    const modal = () => {
+        searchMdl.classList.toggle('opacity-0');
+        searchMdl.classList.toggle('invisible');
+        searchMdl.classList.toggle('-translate-y-[30%]');
+    }
+
+    searchBtn.addEventListener('click', () => {
+        modal();
+    });
+
+    clsMdl.addEventListener('click', () => {
+        modal();
+    });
+
+    window.onclick = event => {
+        if (event.target === searchMdl) {
+            modal();
+        }
+    }
+});
+
 header.innerHTML = Header();
 footer.innerHTML = Footer();
 

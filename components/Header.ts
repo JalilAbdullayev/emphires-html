@@ -26,8 +26,8 @@ export const Header = (): string => {
             </a>
         </div>
         <div>
-            <button class="mx-4">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="mx-4" id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
     </div>
@@ -62,7 +62,7 @@ export const Header = (): string => {
             <div class="mb-1">
                 Have any Questions?
             </div>
-            <a href="tel:" class="mb-1">
+            <a href="tel:" class="mb-1 text-white">
                 +0 123 456 789
             </a>
         </div>
